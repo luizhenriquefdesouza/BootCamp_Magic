@@ -1,6 +1,10 @@
 # language: pt
 
 Funcionalidade: Lista de cartas
+Acessar e Listar as cartas por colecao e seus detalhes
+#Primeira vez que o usuario esta no APP, todas as cartas são recomendaçao 
+#SEM DECK na PRIMEIRA SPRINT
+#Teste de API - validar se as cartas estao na lista de recomendados
 
 Cenario: Ver Lista de Cartas
 Dado que estou com o APP aberto
