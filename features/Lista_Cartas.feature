@@ -1,6 +1,7 @@
 # language: pt
 
 Funcionalidade: Lista de cartas
+Listar cartas do jogo Magic e seus detalhes
 
 Cenario: Ver Lista de Cartas
 Dado que estou com o APP aberto
