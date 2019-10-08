@@ -7,20 +7,20 @@ end
 Entao("a carta e marcada favorita") do
 end
 
-#2
-Dado("") do
+#Marcar carta como favorita
+# Dado("") do
+# end
+Quando("seleciono a opcao de favorito") do
 end
-Quando("") do
-end
-Entao("") do
+Entao("a carta e marcada como favorita") do
 end
 
-#3
-Dado("") do
+#Desmarcar carta como favorita
+# Dado("") do
+# end
+Quando("seleciono a opçao de favorito") do
 end
-Quando("") do
-end
-Entao("") do
+Entao("desmarco a carta como favorita") do
 end
 
 
