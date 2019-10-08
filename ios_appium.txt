@@ -3,6 +3,8 @@ platformName = "iOS"
 platformVersion = "13.0"
 deviceName = "iPhone_X"
 app = "/Users/luiz.h.de.souza/Documents/MagicAPP/iOS_Simulator_iPhone_X/MagicApp.app"
+noReset= "true"
+fullReset= "false"
 
 automationName = 'XCUITest'
 

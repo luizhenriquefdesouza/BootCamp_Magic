@@ -2,7 +2,8 @@ require 'pry'
 
 class CartasRecomendadasScreen
 
-    def verifica_tela_cartas_recomendadas
+
+    def verifica_tela_cartas_inicial
         find_element(id: "LBLTITLE").visible
     end
 
@@ -20,15 +21,20 @@ class CartasRecomendadasScreen
     end
     
     def verifica_tela_detalhe
-        find_element(id: "FOTO_DETALHE").visible
+        find_element(id: "Card 1").visible
     end
 
     def volta_para_tela_cartas_recomendadas
+        #refatorar
+        find_element(id: "LBLTITLE").visible
+        find_element(id: "TBRECOMMENDEDCARDS").visible
+
+        find_element(id: "Card 1").visible
+        find_element(id: "Card 1").click
+
+        
         find_element(id: "BTNCLOSE").visible
         find_element(id: "BTNCLOSE").click
     end
-
-
-
 end
 

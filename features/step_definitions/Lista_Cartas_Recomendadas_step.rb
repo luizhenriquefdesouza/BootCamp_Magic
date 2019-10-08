@@ -7,7 +7,7 @@ Dado("que estou com o APP aberto") do
 end
 Quando("estou na tela inicial do APP") do
     lista_Recomendada = CartasRecomendadasScreen.new
-    lista_Recomendada.verifica_tela_cartas_recomendadas
+    lista_Recomendada.verifica_tela_cartas_inicial
 end
 Entao("Vejo a lista de cartas recomendadas") do
     lista_Recomendada = CartasRecomendadasScreen.new
@@ -16,30 +16,29 @@ end
 
 #2
 Dado("que estou na tela de cartas recomendadas") do
-    #reaproveitar step anterior 
     lista_Recomendada = CartasRecomendadasScreen.new
-    lista_Recomendada.verifica_tela_cartas_recomendadas
+    lista_Recomendada.verifica_lista_cartas_recomendadas
 end
 Quando("escolho uma carta") do
     lista_Recomendada = CartasRecomendadasScreen.new
     lista_Recomendada.acessar_detalhe_carta
 end
-Entao("vejo os detalhes da carta") do
-    binding.pry
-    #Pedir para os DEVs colocarem ID na FOTO OU elemento com mesmo ID
+Entao("vejo os detalhes de uma carta") do
+    #INSERIR ID DA CARTA
+    lista_Recomendada = CartasRecomendadasScreen.new
+    lista_Recomendada.verifica_tela_detalhe
 end
 
+#3
 Dado("que estou nos detalhes da carta") do
-    #Pedir para os DEVs colocarem ID na FOTO OU elemento com mesmo ID
+    lista_Recomendada = CartasRecomendadasScreen.new
+    lista_Recomendada.verifica_tela_detalhe
 end
 Quando("escolher a opçao sair da tela de detalhes") do
     lista_Recomendada = CartasRecomendadasScreen.new
     lista_Recomendada.volta_para_tela_cartas_recomendadas
 end
 Entao("vejo a lista de cartas recomendas") do
-    #Reaproveitar STEP
     lista_Recomendada = CartasRecomendadasScreen.new
-    lista_Recomendada.verifica_tela_cartas_recomendadas
+    lista_Recomendada.verifica_lista_cartas_recomendadas
 end
-
-

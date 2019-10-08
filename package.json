@@ -1,0 +1,24 @@
+{
+  "name": "bootcamp_magic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test_api": "NODE_ENV=https://api.magicthegathering.io/ mocha API/magic_api.js",
+    "test_sdk": "NODE_ENV=https://api.magicthegathering.io/ mocha API/magic_sdk.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luizhenriquefdesouza/BootCamp_Magic.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luizhenriquefdesouza/BootCamp_Magic/issues"
+  },
+  "homepage": "https://github.com/luizhenriquefdesouza/BootCamp_Magic#readme",
+  "dependencies": {
+    "wd": "^1.11.4"
+  }
+}
