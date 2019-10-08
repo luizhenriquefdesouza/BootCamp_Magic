@@ -15,6 +15,7 @@ Cenario: Desmarcar carta como favorita
 Quando a carta esta marcada como favorita
 Entao seleciono a opcao de favorito
 
+#criar arquivo para navegacao
 Cenario: Acessar menu de cartas favoritas
 Dado que estou na tela inicial do APP
 Quando seleciono o menu de cartas favoritas
